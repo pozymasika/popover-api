@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <title>Vite App</title>
+  </head>
+  <body>
+    <div id="app">
+      <button id="menu-btn" popovertarget="menu">Show Menu</button>
+      <nav id="menu" popover>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+          <li>
+            <button class="more-btn" popovertarget="more">
+              More >
+            </button>
+            <nav id="more" popover>
+              <ul>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Products</a></li>
+                <li><a href="#">Clients</a></li>
+                <li>
+                  <button class="more-btn" popovertarget="more2">
+                    Even More >
+                  </button>
+                  <nav id="more2" popover>
+                    <ul>
+                      <li><a href="#">Pricing</a></li>
+                      <li><a href="#">Support</a></li>
+                    </ul>
+                </li>
+              </ul>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
